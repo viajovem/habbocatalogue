@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Nookbook - Unofficial Animal Crossing New Horizons Database</title>
-    <meta name="description" content="Search <%= totalNumItems.toLocaleString() %> Animal Crossing New Horizon items, residents, achievements, and more">
+    <title>Habbo Catálogo</title>
+    <meta name="description" content="Search <%= totalNumItems.toLocaleString() %> Habbo">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -81,7 +81,7 @@
       <div class="contentWrapper">
         <div id="siteNav">
           <div>
-            <label>The Nookbook Database: <input id="autoComplete" name="nooksearch" placeholder="Search ..."></label>
+            <label>Busca: <input id="autoComplete" name="nooksearch" placeholder="Search ..."></label>
           </div>
           <ul>
           <% Object.values(categories).forEach(function (category) { %>
@@ -91,9 +91,9 @@
           <hr>
         </div>
         <% if (categoryName) { %>
-        <h1>Showing <%= totalNumItems.toLocaleString() %> <%= categoryName %> items</h2>
+        <h1>Mostrando <%= totalNumItems.toLocaleString() %> <%= categoryName %> mobis</h2>
         <% } else { %>
-        <h1>Search <%= totalNumItems.toLocaleString() %> Animal Crossing New Horizon items, residents, achievements, and more</h2>
+        <h1>Procurar <%= totalNumItems.toLocaleString() %> mobis</h2>
         <% } %>
         <ul id="itemList">
           <% if (gameItems && gameItems.length) { %>
@@ -106,8 +106,8 @@
         </ul>
       </div>
       <footer class="pageFooter">
-        <div>Created by <a href="https://github.com/madjake">Jake Fournier</a>. <a href="https://www.linkedin.com/in/jakefournier/">Hire me</a></div>
-        <div>The data used to power this website is sourced by the community. THANK YOU! <a href="https://docs.google.com/spreadsheets/d/13d_LAJPlxMa_DubPTuirkIV4DERBMXbrWQsmSh8ReK4/">View the Data</a></div>
+        <div>Copyrights © - Fã Site 2012~2022 PixelsE - Todos os direitos reservados.</div>
+        <div>Esta Fã Site não está afiliada com, patrocinada por, apoiada por, ou principalmente aprovada pela Sulake Oy ou suas empresas Afiliadas. Esta Fã Site pode utilizar as marcas registradas e outras propriedades intelectuais do Habbo, que estão permitidas sob a Política de Fã Sites Habbo.</div>
       </footer>
     </div>
     <script src="/static/autocomplete.min.js"></script>
