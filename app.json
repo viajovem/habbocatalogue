@@ -1,6 +1,6 @@
 {
-  "name": "The Nookbook Animal Crossing Database",
-  "description": "A database of Animal Crossing New Horizons items",
-  "keywords": ["node", "fastify", "heroku", "Animal Crossing New Horizons"],
+  "name": "Habbo Catálogo",
+  "description": "A database do mobiliário do Habbo",
+  "keywords": ["node", "fastify", "heroku", "Habbo"],
   "image": "heroku/nodejs"
 }
