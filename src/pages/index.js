@@ -1,6 +1,6 @@
 const page = (req, reply) => {
   reply.view('src/templates/index.ejs', {
-    categoryName: 'Animal Crossing New Horizon Item Database',
+    categoryName: 'Habbo catálogo',
     totalNumItems: req.searchIndex.getNumDocuments(),
     categories: req.db.categories,
     gameItems: [],
