@@ -66,7 +66,7 @@ class DataLoader {
   }
 
   loadXLSXWorkbook() {
-    return XLSX.readFile('data/acnh.xlsx');
+    return XLSX.readFile('data/Furni_hhbr.xlsx');
   }
 }
 
