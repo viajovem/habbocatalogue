@@ -99,7 +99,42 @@
           <% if (gameItems && gameItems.length) { %>
             <% gameItems.forEach(function (item) { %>
               <% if (item && item.Image) { %>
-              <li><div><%= item.fullName %></div><img src="<%= item.Image %>" title="<%= item.fullName %>"></img></li>
+              <li> <br><div class="mao-container">
+    <div class="mao">
+       <div class="mao-left">
+         <div class="mao-general">
+          <div class="mao-label">
+            <h3 class="name"><div><%= item.fullName %></div></h3>
+            <h5 class="type">{{product.fx_effect}}</h5>
+          </div>
+          <div class="icons">
+           <img class="diy" data-diy="false" src="" />
+           <img src="<%= item.Image %>" title="<%= item.fullName %>"></img>
+           <img class="custom" data-customize="false" src="{{product.link_effect}}"></img>
+          </div>
+        
+          <img class="mao-img" src="{{product.imagem_visual}}" height="100%" ng-if="product.imagem_visual"/>
+          <p class="variant-selected" ng-if="product.item">{{product.item}}</p>
+          <div class="variants">
+            <div style="border: 2px;text-align:center;" ng-if="product.descric_effect">
+              {{product.descric_effect}}
+            </div>
+
+
+          </div><!-- end of variant -->
+     </div>
+         <hr />
+ 
+      <div class="item-info">
+        <table>
+informações extras
+        </table>
+      </div>
+<a href="https://images.habbo.com/habbo-asset-bundles/production/2019.3.9f1/Content/WebGL/{{product.revision}}/{{product.code}}" target="_blank" ng-if="product.revision"><i class="fab fa-unity" aria-hidden="true"></i></a>
+  </div>
+   </div><!--end of one item-->
+  
+</div><!--//end of container--></li>
               <% } %>
             <% }); %>
           <% } %>
