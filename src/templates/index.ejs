@@ -42,14 +42,6 @@ hr{
   background: #e38528; 
 }
 
-.teste{
-  width:100%;
-  display:flex;
-  flex-flow:row wrap;
-  justify-content:center;
-  height:100%;
-}
-
 .mao-container{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
@@ -266,7 +258,7 @@ and (max-device-width : 1024px)  {
           <% if (gameItems && gameItems.length) { %>
             <% gameItems.forEach(function (item) { %>
               <% if (item && item.Image) { %>
-              <li><div class="teste">
+              <br><li>
      
  <br><div class="mao-container">
     <div class="mao">
@@ -302,7 +294,7 @@ infos extras
    </div><!--end of one item-->
   
 </div><!--//end of container-->
-    </div></li>
+   </li>
               <% } %>
             <% }); %>
           <% } %>
