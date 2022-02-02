@@ -240,10 +240,7 @@ and (max-device-width : 1024px)  {
           <% if (gameItems && gameItems.length) { %>
             <% gameItems.forEach(function (item) { %>
               <% if (item && item.Image) { %>
-              <li><div ng-app='angularDemo' ng-cloak>
-  <div class="mainPage" ng-controller="angularController as ctrl">
-
-     <div class="teste">
+              <li>   <div class="teste">
       <div ng-repeat="product in warehouse | dynamicFilter:Filters:this">
  <br><div class="mao-container">
     <div class="mao">
@@ -271,30 +268,7 @@ and (max-device-width : 1024px)  {
  
       <div class="item-info">
         <table>
-          <tr ng-if="product.time">
-            <th class="label">Duração</th><td class="from"> {{product.time}}</td>
-          </tr>
-          <tr ng-if="product.hc_effect">
-            <th class="label">Somente HC?</th><td class="from"> {{product.hc_effect}}</td>
-          </tr>
-           <tr ng-if="product.price_coin">
-            <th class="label">Moedas</th><td> {{product.price_coin}}  <img src="https://1.bp.blogspot.com/-2_YS3TIPbkg/X7MoU-5iYcI/AAAAAAABfRk/9vxGWtQkl8Aj6JEZ-heaBbjTtjWKz1uHACPcBGAsYHg/s0/1952_HabboWindowManagerCom_toolbar_credit_icon_0.png" style="width: 23px;height: 22px;margin-left:5px;" /></td>
-          </tr>
-          <tr ng-if="product.price_duckets">
-            <th class="label">Duckets</th><td> {{product.price_duckets}}  <img src="https://1.bp.blogspot.com/-caGOIzgtFm4/X7MoU8jsy5I/AAAAAAABfRk/7es1Euqpw1cIkbqThAgN3k6JYsqOK6CiACPcBGAsYHg/s0/827__-Vp.png" style="width: 23px;height: 22px;margin-left:5px;"/></td>
-          </tr>
-          <tr ng-if="product.Not_bed">
-            <th class="label">Pode deitar?</th><td class="from"> {{product.Not_bed}}</td>
-          </tr>
-          <tr ng-if="product.Not_Float">
-            <th class="label">Pode flutuar?</th><td class="from"> {{product.Not_Float}}</td>
-          </tr>
-          <tr ng-if="product.Not_Swim">
-            <th class="label">Pode nadar?</th><td class="from"> {{product.Not_Swim}}</td>
-          </tr>
-          <tr ng-if="product.Not_Sit">
-            <th class="label">Pode sentar?</th><td class="from"> {{product.Not_Sit}}</td>
-          </tr>
+infos extras
         </table>
       </div>
 <a href="https://images.habbo.com/habbo-asset-bundles/production/2019.3.9f1/Content/WebGL/{{product.revision}}/{{product.code}}" target="_blank" ng-if="product.revision"><i class="fab fa-unity" aria-hidden="true"></i></a>
@@ -304,8 +278,6 @@ and (max-device-width : 1024px)  {
 </div><!--//end of container-->
       </div> 
     </div>
-  </div>
-</div>
 </li>
               <% } %>
             <% }); %>
