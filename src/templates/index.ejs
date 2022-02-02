@@ -240,7 +240,7 @@ and (max-device-width : 1024px)  {
       <div class="contentWrapper">
         <div id="siteNav">
           <div>
-            <label>Busca: <input id="autoComplete" name="nooksearch" placeholder="Search ..."></label>
+            <label>Busca: <input id="autoComplete" name="nooksearch" placeholder="Procurar ..."></label>
           </div>
           <ul>
           <% Object.values(categories).forEach(function (category) { %>
@@ -250,17 +250,15 @@ and (max-device-width : 1024px)  {
           <hr>
         </div>
         <% if (categoryName) { %>
-        <h1>Mostrando <%= totalNumItems.toLocaleString() %> <%= categoryName %> mobis</h2>
+        <h1>Mostrando <%= totalNumItems.toLocaleString() %> mobis da coleção <%= categoryName %></h2>
         <% } else { %>
-        <h1>Procurar <%= totalNumItems.toLocaleString() %> mobis</h2>
+        <h1>Encontrados <%= totalNumItems.toLocaleString() %> mobis</h2>
         <% } %>
         <ul id="itemList">
           <% if (gameItems && gameItems.length) { %>
             <% gameItems.forEach(function (item) { %>
               <% if (item && item.Image) { %>
-              <br><li>
-     
- <br><div class="mao-container">
+              <li><div class="mao-container">
     <div class="mao">
        <div class="mao-left">
          <div class="mao-general">
@@ -326,7 +324,7 @@ infos extras
       }
       
       function updateHeader(searchQuery, numResults) {
-        document.getElementsByTagName('h1')[0].innerHTML = 'Found ' + numResults + ' matching <span class="search-query">' + searchQuery + '</span>';
+        document.getElementsByTagName('h1')[0].innerHTML = 'Encontrado ' + numResults + ' resultados com a busca <span class="search-query">' + searchQuery + '</span>';
       }
 
       new autoComplete({
