@@ -56,6 +56,7 @@ hr{
 }
 .mao{
   border-radius: 15px;
+  
   display: grid;
   grid-template-columns:1fr 1fr 1fr 1fr 0px ;
   grid-template-areas:
@@ -63,8 +64,8 @@ hr{
 }
 .mao-left{
   grid-area: l;
-  background-color: #f3f2d6;
-  border: 1px solid #f3f2d6;
+  background-color: #4ea3d4;
+  border: 1px solid #4ea3d4;
   border-radius: 15px 15px 15px 15px;
   padding:20px;
 }
@@ -259,7 +260,7 @@ and (max-device-width : 1024px)  {
             <% gameItems.forEach(function (item) { %>
               <% if (item && item.Image) { %>
               <li><div class="mao-container">
-    <div class="mao">
+    <div class="mao" stlye="margin-left: 10px;padding: 10px;">
        <div class="mao-left">
          <div class="mao-general">
           <div class="mao-label">
